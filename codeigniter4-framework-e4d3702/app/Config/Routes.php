@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('test-db', 'TestDB::index');
 $routes->post('shipping', 'ShippingController::create');
+$routes->post('api/shipping/create', 'ShippingController::create');
