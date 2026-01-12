@@ -9,7 +9,8 @@ mudah diuji, dan sesuai dengan scope tugas web service.
 
 ## Estimasi Pengiriman
 
-Estimasi pengiriman adalah 3 hari.
+Estimasi waktu pengiriman adalah 3–5 hari kerja.
+Nilai ini bersifat statis dan digunakan untuk simulasi layanan shipping.
 
 ## Tujuan
 
