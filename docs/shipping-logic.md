@@ -56,3 +56,12 @@ Contoh response:
   "message": "Order ID tidak ditemukan"
 }
 ```
+
+## Asumsi Sistem
+
+Beberapa asumsi yang digunakan dalam implementasi shipping service ini:
+
+- Ongkir bersifat flat dan tidak dipengaruhi jarak maupun berat barang.
+- Estimasi pengiriman bersifat statis dan tidak memperhitungkan hari libur.
+- Sistem tidak terintegrasi dengan jasa ekspedisi nyata.
+- Status pengiriman diperbarui secara manual atau simulasi.
