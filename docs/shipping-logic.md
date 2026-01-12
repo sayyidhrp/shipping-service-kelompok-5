@@ -74,3 +74,11 @@ Beberapa pengembangan yang dapat dilakukan di masa depan antara lain:
 - Perhitungan ongkir berdasarkan jarak dan berat barang.
 - Estimasi pengiriman yang lebih dinamis.
 - Tracking pengiriman secara real-time.
+
+## Penutup
+
+Dokumentasi ini dibuat sebagai bagian dari tugas Web Service
+untuk mensimulasikan layanan shipping sederhana.
+
+Seluruh logika dan response disesuaikan dengan kebutuhan pembelajaran
+dan dapat dikembangkan lebih lanjut di masa depan.
