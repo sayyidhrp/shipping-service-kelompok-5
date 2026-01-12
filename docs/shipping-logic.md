@@ -43,3 +43,16 @@ Status pengiriman digunakan untuk menunjukkan posisi proses order.
 - `pending` : Order telah dibuat dan menunggu diproses.
 - `on_delivery` : Paket sedang dalam proses pengiriman.
 - `delivered` : Paket telah diterima oleh penerima.
+
+## Response Error
+
+Jika order_id tidak ditemukan, layanan shipping akan mengembalikan response error.
+
+Contoh response:
+
+```json
+{
+  "error": true,
+  "message": "Order ID tidak ditemukan"
+}
+```
