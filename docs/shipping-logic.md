@@ -35,3 +35,11 @@ Contoh:
   "status": "on_delivery"
 }
 ```
+
+## Status Pengiriman
+
+Status pengiriman digunakan untuk menunjukkan posisi proses order.
+
+- `pending` : Order telah dibuat dan menunggu diproses.
+- `on_delivery` : Paket sedang dalam proses pengiriman.
+- `delivered` : Paket telah diterima oleh penerima.
