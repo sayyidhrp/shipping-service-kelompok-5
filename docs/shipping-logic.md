@@ -65,3 +65,12 @@ Beberapa asumsi yang digunakan dalam implementasi shipping service ini:
 - Estimasi pengiriman bersifat statis dan tidak memperhitungkan hari libur.
 - Sistem tidak terintegrasi dengan jasa ekspedisi nyata.
 - Status pengiriman diperbarui secara manual atau simulasi.
+
+## Pengembangan Ke Depan
+
+Beberapa pengembangan yang dapat dilakukan di masa depan antara lain:
+
+- Integrasi dengan API jasa ekspedisi nyata (JNE, J&T, SiCepat).
+- Perhitungan ongkir berdasarkan jarak dan berat barang.
+- Estimasi pengiriman yang lebih dinamis.
+- Tracking pengiriman secara real-time.
