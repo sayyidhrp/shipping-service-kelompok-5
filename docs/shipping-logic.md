@@ -20,3 +20,18 @@ Belum mendukung pengiriman internasional.
 ## Tujuan
 
 Logika dibuat sederhana untuk kebutuhan tugas web service.
+
+## Contoh Response Shipping
+
+Response dari layanan shipping akan dikembalikan dalam format JSON.
+
+Contoh:
+
+```json
+{
+  "order_id": "ORD123",
+  "shipping_cost": 20000,
+  "estimated_days": "3-5",
+  "status": "on_delivery"
+}
+```
