@@ -15,20 +15,21 @@ class ShippingController extends ResourceController
                                                                                                                                                                                                                                                                                                                                                                     
 public function status($order_id = null)
 {
+    // Validasi: order_id wajib diisi
     if (!$order_id) {
         return $this->respond([
             'success' => false,
             'message' => 'Order ID tidak boleh kosong'
         ], 400);
     }
-
+    // Simulasi: order tidak ditemukan
     if ($order_id !== 'ORD123') {
         return $this->respond([
             'success' => false,
             'message' => 'Order ID tidak ditemukan'
         ], 404);
     }
-
+     // Response sukses
     return $this->respond([
         'success' => true,
         'data' => [
