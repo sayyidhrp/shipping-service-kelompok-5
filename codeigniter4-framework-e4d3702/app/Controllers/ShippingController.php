@@ -13,7 +13,7 @@ class ShippingController extends ResourceController
         ]);
     }
                                                                                                                                                                                                                                                                                                                                                                     
-    public function status($order_id = null)
+public function status($order_id = null)
 {
     if (!$order_id) {
         return $this->respond([
@@ -37,6 +37,7 @@ class ShippingController extends ResourceController
         ]
     ]);
 }
+
 
 
 }
