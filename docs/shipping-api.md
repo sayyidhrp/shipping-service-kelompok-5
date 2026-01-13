@@ -34,3 +34,11 @@ Beberapa pengembangan yang dapat dilakukan pada Shipping API ini antara lain:
 - Penambahan endpoint untuk membuat dan memperbarui status pengiriman.
 - Integrasi dengan layanan ekspedisi pihak ketiga.
 - Penambahan fitur tracking pengiriman secara real-time.
+
+## Penutup
+
+Shipping API ini dibuat sebagai bagian dari tugas Web Service
+untuk mensimulasikan layanan pengecekan status pengiriman.
+
+Implementasi saat ini difokuskan pada pembelajaran konsep API,
+validasi request, dan struktur response yang konsisten.
