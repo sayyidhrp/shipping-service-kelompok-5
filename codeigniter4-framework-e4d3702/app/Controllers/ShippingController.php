@@ -5,36 +5,40 @@ namespace App\Controllers;
 use CodeIgniter\RESTful\ResourceController;
 
 class ShippingController extends ResourceController
-{
-    public function create()
     {
-        // Ambil data dari body JSON
-        $data = $this->request->getJSON();
-
-        // Proses simpan ke database atau generate shipping_id
-        // Untuk contoh, kita hardcode dulu
-        $shippingId = 'SHP001';
-        $status = 'IN_DELIVERY';
-        $estimatedDays = 3;
-
+    public function index()
+    {
         return $this->respond([
-            'shipping_id' => $shippingId,
-            'status' => $status,
-            'estimated_days' => $estimatedDays
+            'message' => 'Shipping API is running'
         ]);
     }
-
-    public function status($orderId)
-    {
-        // Ambil data dari database berdasarkan orderId
-        // Misalnya hasil query:
-        $shipping = [
-            'shipping_id' => 'SHP001',
-            'status' => 'IN_DELIVERY',
-            'estimated_days' => 3
-        ];
-
-        return $this->respond($shipping);
+                                                                                                                                                                                                                                                                                                                                                                    
+public function status($order_id = null)
+{
+    // Validasi: order_id wajib diisi
+    if (!$order_id) {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Order ID tidak boleh kosong'
+        ], 400);
     }
+    // Simulasi: order tidak ditemukan
+    if ($order_id !== 'ORD123') {
+        return $this->respond([
+            'success' => false,
+            'message' => 'Order ID tidak ditemukan'
+        ], 404);
+    }
+     // Response sukses
+    return $this->respond([
+        'success' => true,
+        'data' => [
+            'order_id' => $order_id,
+            'status' => 'on_delivery'
+        ]
+    ]);
+}
+
+
 
 }
