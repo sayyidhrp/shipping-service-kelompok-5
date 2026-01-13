@@ -13,11 +13,27 @@ class ShippingController extends ResourceController
         ]);
     }
 
-    public function status($order_id)
-    {
-        return $this->respond([
-            'order_id' => $order_id,
-            'status' => 'on_delivery'
-        ]);
+    public function status($order_id = null)
+{
+    if (!$order_id) {
+        return $this->fail([
+            'error' => true,
+            'message' => 'Order ID tidak boleh kosong'
+        ], 400);
     }
+
+    // simulasi order tidak ditemukan
+    if ($order_id !== 'ORD123') {
+        return $this->fail([
+            'error' => true,
+            'message' => 'Order ID tidak ditemukan'
+        ], 404);
+    }
+
+    return $this->respond([
+        'order_id' => $order_id,
+        'status' => 'on_delivery'
+    ]);
+}
+
 }
